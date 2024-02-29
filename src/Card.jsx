@@ -1,10 +1,11 @@
-//Este componente deberia recibir por props y mostrar en pantalla la informacion
-//que envia el usuario
+import React from 'react';
 
-function Card() {
+function Card({ wheelBrand, numberOfWheels }) {
   return (
-    <div>
-      <h2>Esto es un componente</h2>
+    <div className="card">
+      <h2>Información de Ruedas de Auto</h2>
+      <p>Marca de las Ruedas: {wheelBrand}</p>
+      <p>Número de Ruedas: {numberOfWheels}</p>
     </div>
   );
 }
